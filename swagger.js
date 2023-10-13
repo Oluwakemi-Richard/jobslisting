@@ -5,8 +5,8 @@ const doc = {
     title: 'Jobs API',
     description: 'Creates and Manages job listings',
   },
-  host: 'localhost:8080',
-  schemes: ['http'],
+  host: 'jobslisting.onrender.com',
+  schemes: ['https'],
 };
 
 // const outputFile = './path/swagger-output.json';

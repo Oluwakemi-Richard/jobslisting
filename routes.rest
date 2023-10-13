@@ -1,21 +1,48 @@
+//Render
+### GET jobs
+GET https://jobslisting.onrender.com/jobs
+
+### GET job by Id
+GET https://jobslisting.onrender.com/jobs/61a921f6028954d4f0319e6d
+
+### Create single job
+POST https://jobslisting.onrender.com/jobs HTTP/1.1 
+content-type: application/json
+
+{
+"role":"Estimator", "company":"Cappa", "location":"Nigeria", "experience":"Senior", "qualification":"BSc/ Registered Member of RICS or NIQS","description":"Estimation of road and building construction works", "reports_to":"Project coordinator"
+}
+### Edit Single job 
+PUT https://jobslisting.onrender.com/jobs/61a921f6028954d4f0319e6d HTTP/1.1 
+content-type: application/json
+
+{
+"role":"Architect", "company":"Cappa", "location":"Nigeria", "experience":"Mid", "qualification":"MSc","description":"Produce and Interpret Architectural drawings for building works", "reports_to":"Project lead"
+} 
+### DELETE single job 
+DELETE https://jobslisting.onrender.com/jobs/61a921f6028954d4f0319f72 HTTP/1.1
+
+
+
+
 //Local system
 ### GET jobs on local
 GET http://localhost:8080/jobs
 ### GET job by id
-
+GET http://localhost:8080/jobs/61a921f6028954d4f0319e6d
 ### Create single job
 POST http://localhost:8080/jobs HTTP/1.1 
 content-type: application/json
 
 {
-"role":"Temilayo", "company":"Blessing", "location":"kemirichard@gmail.com", "experience":"Purple", "qualification":"26/10/1993","description":"yeah yeah", "reports_to":"senior"
+"role":"Data Sientist", "company":"Amazon", "location":"UK (Remote)", "experience":"Senior", "qualification":"MSc/ PhD preferrable","description":"Drawing insights from data to make recommendations", "reports_to":"Principal Engineer"
 }
 ### Edit Single job 
-PUT http://localhost:8080/jobs/65180c5ab196b1eb7986a846 HTTP/1.1 
+PUT http://localhost:8080/jobs/61a921f6028954d4f0319e6d HTTP/1.1 
 content-type: application/json
 
 {
-"role":"Temilayo", "company":"Blessing", "location":"kemirichard@gmail.com", "experience":"Purple", "qualification":"26/10/1993","description":"yeah yeah", "reports_to":"senior"
+"role":"Data Analyst", "company":"Lloyds Bank", "location":"London", "experience":"Mid", "qualification":"Bachelors","description":"Using necessary tools to analyze data and generate reports", "reports_to":"Manager"
 } 
 ### DELETE single job 
-DELETE http://localhost:8080/jobs/65180c5ab196b1eb7986a846 HTTP/1.1
+DELETE http://localhost:8080/jobs/61a921f6028954d4f0319f71 HTTP/1.1
