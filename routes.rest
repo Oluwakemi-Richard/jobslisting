@@ -1,0 +1,21 @@
+//Local system
+### GET jobs on local
+GET http://localhost:8080/jobs
+### GET job by id
+
+### Create single job
+POST http://localhost:8080/jobs HTTP/1.1 
+content-type: application/json
+
+{
+"role":"Temilayo", "company":"Blessing", "location":"kemirichard@gmail.com", "experience":"Purple", "qualification":"26/10/1993","description":"yeah yeah", "reports_to":"senior"
+}
+### Edit Single job 
+PUT http://localhost:8080/jobs/65180c5ab196b1eb7986a846 HTTP/1.1 
+content-type: application/json
+
+{
+"role":"Temilayo", "company":"Blessing", "location":"kemirichard@gmail.com", "experience":"Purple", "qualification":"26/10/1993","description":"yeah yeah", "reports_to":"senior"
+} 
+### DELETE single job 
+DELETE http://localhost:8080/jobs/65180c5ab196b1eb7986a846 HTTP/1.1
