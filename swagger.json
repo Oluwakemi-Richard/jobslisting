@@ -43,25 +43,25 @@
               "type": "object",
               "properties": {
                 "role": {
-                  "example": "any"
+                  "example": "string"
                 },
                 "company": {
-                  "example": "any"
+                  "example": "string"
                 },
                 "location": {
-                  "example": "any"
+                  "example": "string"
                 },
                 "experience": {
-                  "example": "any"
+                  "example": "string"
                 },
                 "qualification": {
-                  "example": "any"
+                  "example": "string"
                 },
                 "description": {
-                  "example": "any"
+                  "example": "string"
                 },
                 "reports_to": {
-                  "example": "any"
+                  "example": "string"
                 }
               }
             }
