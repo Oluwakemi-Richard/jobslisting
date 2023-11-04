@@ -3,7 +3,7 @@ const router = express.Router();
 const userController = require('../controllers/user');
 const { isAuthenticated } = require('../util/authenticate');
 
-router.get('/',isAuthenticated, userController.getUsers);
+router.get('/', userController.getUsers);
 router.get('/:id', userController.getSingle);
 
 router.post('/', userController.createUser);

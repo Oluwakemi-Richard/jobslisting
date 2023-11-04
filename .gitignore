@@ -2,3 +2,5 @@
 #should not be tracked on git
 node_modules
 .env
+keys.js
+/config/keys.js
