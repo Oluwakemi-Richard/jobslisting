@@ -8,8 +8,7 @@ router.get('/login', (req, res) => {
 
 //  auth logout
 router.get('/logout', (req, res) => {
-    // handle with passport
-    res.send('logging out');
+    res.send('You are logged out');
 });
 
 // auth with google
@@ -19,8 +18,7 @@ router.get('/google', passport.authenticate('google', {
 
 //  callback route for google to redirect to
 router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
-    res.redirect('http://localhost:8080/jobs');
-    // res.send('you reached the callback URI');
+    res.redirect('https://jobslisting.onrender.com/api-docs');
 });
 
 module.exports = router;
