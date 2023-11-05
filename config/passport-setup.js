@@ -15,7 +15,7 @@ module.exports = function(passport) {
                 const user = await mongodb
                     .getDb()
                     .db('Joblists')
-                    .collection("users")
+                    .collection("googleusers")
                     .find({ googleId: profile.id })
                     .toArray();
                 if (user.length === 0) {
@@ -26,7 +26,7 @@ module.exports = function(passport) {
                     await mongodb
                         .getDb()
                         .db('Joblists')
-                        .collection("users")
+                        .collection("googleusers")
                         .insertOne(newUser);
                     done(null, newUser)
                 } else {
